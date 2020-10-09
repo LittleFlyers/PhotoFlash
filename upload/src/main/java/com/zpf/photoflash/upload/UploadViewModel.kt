@@ -15,10 +15,10 @@ class UploadViewModel : ViewModel() {
 
     private fun initConfigItem(): MutableList<ConfigItem> {
         val items: MutableList<ConfigItem> = ArrayList<ConfigItem>()
-        items.add(ConfigItem("上传到", "默认", ""))
-        items.add(ConfigItem("相册权限", "公开", ""))
-        items.add(ConfigItem("画质", "正常", ""))
-        items.add(ConfigItem("地点", "", ""))
+        items.add(ConfigItem("上传到", "默认", "","1"))
+        items.add(ConfigItem("相册权限", "公开", "","2"))
+        items.add(ConfigItem("画质", "正常", "","3"))
+        items.add(ConfigItem("地点", "", "","4"))
         return items
     }
 }

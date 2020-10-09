@@ -1,6 +1,7 @@
 package com.zpf.photoflash.upload.ui
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,6 +10,7 @@ import android.widget.TextView
 import com.zpf.photoflash.upload.R
 import com.zpf.photoflash.upload.data.ConfigItem
 import kotlinx.android.synthetic.main.config_item_layout.view.*
+import kotlin.math.log
 import kotlin.properties.Delegates
 
 class ConfigAdapter(context: Context, resource: Int, objects: MutableList<ConfigItem>) :
@@ -36,7 +38,7 @@ class ConfigAdapter(context: Context, resource: Int, objects: MutableList<Config
                 view.findViewById(R.id.config_item_content)
             )
             view.tag = viewHolder
-        }else{
+        } else {
             view = convertView
             viewHolder = view.tag as ViewHolder
         }
