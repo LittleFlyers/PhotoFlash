@@ -1,4 +1,4 @@
-package com.zpf.photoflash.upload.data
+package com.zpf.photoflash.upload.entity
 
 data class ConfigItem(
     val title: String,

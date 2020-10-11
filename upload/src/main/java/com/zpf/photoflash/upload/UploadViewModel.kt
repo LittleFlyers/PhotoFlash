@@ -3,7 +3,7 @@ package com.zpf.photoflash.upload
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.zpf.photoflash.upload.data.ConfigItem
+import com.zpf.photoflash.upload.entity.ConfigItem
 import java.util.ArrayList
 
 class UploadViewModel : ViewModel() {

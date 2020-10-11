@@ -12,6 +12,7 @@
         android:layout_height="50dp"
         android:ems="10"
         android:hint="说点什么吧..."
+        android:importantForAutofill="no"
         android:inputType="textMultiLine"
         android:minLines="5"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,4 +29,14 @@
         app:layout_constraintVertical_bias="0.194"
         tools:layout_editor_absoluteX="0dp" />
 
+    <GridView
+        android:id="@+id/upload_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="476dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
