@@ -64,10 +64,18 @@ class PreviewImgActivity : BaseActivity() {
         previewImgViewModel.preImgUri.observe(this, Observer {
             freshPreImgView(it.uri)
         })
+        previewImgViewModel.imgList.observe(this, Observer {
+            initPhotoList(it)
+        })
+        previewImgViewModel.getImgList(this)
     }
 
     private fun freshPreImgView(uri: Uri) {
         val preImage = findViewById<ImageView>(R.id.img_upload_preview)
         preImage.setImageURI(uri)
+    }
+
+    private fun initPhotoList(data: MutableList<ImgInfo>) {
+        freshPreImgView(data[0].uri)
     }
 }
